@@ -2,12 +2,12 @@
 from setuptools import setup, find_packages
 
 setup(name='cryptos',
-      version='1.36',
+      version='1.37',
       description='Python Crypto Coin Tools',
       long_description=open('README.md').read(),
-      author='Paul Martin',
-      author_email='paulmartinforwork@gmail.com',
-      url='http://github.com/primal100/pybitcointools',
+      author='Mikhail Antonov',
+      author_email='allelementaryfor@gmail.com',
+      url='https://github.com/allelementary/pybitcointools',
       packages=find_packages(),
       scripts=['cryptotool'],
       include_package_data=True,
