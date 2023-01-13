@@ -15,7 +15,7 @@ class Doge(BaseCoin):
     xpub_prefix = 0x02fac398
     testnet_overrides = {
         'display_name': "Dogecoin Testnet",
-        'coin_symbol': "Dogecoin",
+        'coin_symbol': "DOGETEST",
         'magicbyte': 113,
         'script_magicbyte': 196,
         'hd_path': 1,

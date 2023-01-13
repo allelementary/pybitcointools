@@ -149,6 +149,35 @@ Another example with Bitcoin Cash testnet:
     '010000000144ea7b41df09cee54c43f817dc11fd4d88c9b721b4c13b588f6a764eab78f692000000008b4830450221008efa819db89f714dbe0a19a7eb605d03259f4755a0f12876e9dddf477e1867b8022072bc76d120e92668f4765b5d694aee4a3cafd6cd4aaa8d5ebf88c3f821c81d9c4141041f763d81010db8ba3026fef4ac3dc1ad7ccc2543148041c61a29e883ee4499dc724ab2737afd66e4aacdc0e4f48550cd783c1a73edb3dbd0750e1bd0cb03764fffffffff02003db139000000001976a91409fed3e08e624b23dbbacc77f7b2a39998351a6888acf046df07000000001976a914ad25bdf0fdfd21ca91a82449538dce47f8dc213d88ac00000000'
     > crypto.pushtx(tx)
     {'status': 'success', 'data': {'txid': 'd8b130183824d0001d3bc669b31e798e2654868a7fda743aaf35d757d89db0eb', 'network': 'tbcc'}}
+
+### Doge
+
+- Create wallet
+```python
+from cryptos import *
+
+doge = Doge(testnet=True)
+private_key = sha256('a big long brainwallet password')
+public_key = doge.privtopub(private_key)
+address = doge.pubtoaddr(public_key)
+```
+
+- Get balance
+```python
+doge = Doge(testnet=True)
+inputs = doge.unspent(address)
+total = 0
+for i in inputs:
+    total += i['value']
+balance = total / 10 ** 8
+```
+
+- Send transaction
+```python
+doge = Doge(testnet=True)
+value = quantity * 10**8
+tx = doge.send(private_key, address_to, value)
+```
     
 ### Segregated Witness - the long way
 The same warnings about testnet practice and fees as discussed earlier applies here.
