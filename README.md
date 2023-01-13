@@ -1,8 +1,7 @@
-REPOSITORY HAS BEEN ARCHIVED AND IS NO LONGER MAINTAINED FOR NOW
-
 # Pycryptotools, Python library for Crypto coins signatures and transactions
 
-This is a fork of Vitalik Buterin's original [pybitcointools](https://github.com/vbuterin/pybitcointools) library.
+This is a fork of [pybitcointools](https://github.com/primal100/pybitcointools) library,
+which is a fork of Vitalik Buterin's original [pybitcointools](https://github.com/vbuterin/pybitcointools) library.
 
 Installation:
 
@@ -21,6 +20,7 @@ Library now supports making and pushing raw transactions for:
 * Dash mainnet
 * Dash testnet
 * Dogecoin mainnet
+* Dogecoin testnet
 * Bitcoin Gold mainnet (with replay protection)
 
 Transaction broadcast has been tested for all of these.
@@ -657,6 +657,3 @@ http://test.faucet.masternode.io/
 https://faucet.thonguyen.net/ltc
 
 http://testnet.litecointools.com/
-
-Anyone know a working Dogecoin testnet faucet, or willing to send testnet coins to address 
-nmfnMVSjfyfiv37HtbphRbLgMPUHQE7QdP so I can test? (Dogecoin mainnet is tested).
