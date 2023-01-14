@@ -153,7 +153,7 @@ Another example with Bitcoin Cash testnet:
 ### Doge
 
 - Create wallet
-```python
+```bash
 from cryptos import *
 
 doge = Doge(testnet=True)
@@ -163,7 +163,7 @@ address = doge.pubtoaddr(public_key)
 ```
 
 - Get balance
-```python
+```bash
 doge = Doge(testnet=True)
 inputs = doge.unspent(address)
 total = 0
@@ -173,7 +173,7 @@ balance = total / 10 ** 8
 ```
 
 - Send transaction
-```python
+```bash
 doge = Doge(testnet=True)
 value = quantity * 10**8
 tx = doge.send(private_key, address_to, value)
