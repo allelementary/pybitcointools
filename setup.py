@@ -13,6 +13,11 @@ setup(name='pybitcointools23',
       scripts=['cryptotool'],
       license="MIT License",
       include_package_data=True,
+      requires=[
+            "requests",
+            "pbkdf2",
+            "pycryptodomex"
+      ],
       classifiers=[
             'Development Status :: 5 - Production/Stable',
             'Intended Audience :: Developers',
