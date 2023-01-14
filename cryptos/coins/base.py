@@ -418,7 +418,7 @@ class BaseCoin(object):
 
         return self.mktx(ins, outputs2)
 
-    def preparesignedtx(self, privkey, to, value, fee=10000, change_addr=None, segwit=False, addr=None):
+    def preparesignedtx(self, privkey, to, value, fee=256000, change_addr=None, segwit=False, addr=None):
         """
         Prepare a tx with a specific amount from address belonging to private key to another address, returning change to the
         from address or change address, if set.
