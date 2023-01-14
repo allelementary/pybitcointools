@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(name='pybitcointools23',
-      version='0.1.0',
+      version='0.1.1',
       description='Python Crypto Coin Tools',
       long_description=open('README.md').read(),
       long_description_content_type="text/markdown",
