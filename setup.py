@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-setup(name='cryptos',
+setup(name='pybitcointools23',
       version='1.37',
       description='Python Crypto Coin Tools',
       long_description=open('README.md').read(),
