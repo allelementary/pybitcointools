@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(name='pybitcointools23',
-      version='0.1.1',
+      version='0.1.2',
       description='Python Crypto Coin Tools',
       long_description=open('README.md').read(),
       long_description_content_type="text/markdown",
@@ -12,6 +12,7 @@ setup(name='pybitcointools23',
       packages=find_packages(),
       scripts=['cryptotool'],
       license="MIT License",
+      package_data={'': ['bitcoin.json', 'bitcoin_testnet.json', 'litecoin.json', 'litecoin_testnet.json']},
       include_package_data=True,
       requires=[
             "requests",
